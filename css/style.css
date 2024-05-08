@@ -421,9 +421,6 @@ body{
     display: flex;
     align-items: center;
   }
-  .container1{
-    padding: 20px;
-  }
   .image2 {
     flex: 1;
     margin-right: 50px; /* Add margin to create space */
