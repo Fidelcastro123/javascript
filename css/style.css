@@ -421,6 +421,9 @@ body{
     display: flex;
     align-items: center;
   }
+  .swiper{
+    padding: 20px;
+  }
   .image2 {
     flex: 1;
     margin-right: 50px; /* Add margin to create space */
@@ -467,7 +470,7 @@ body{
   .container3 {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px
+    padding: 20px;
   }
   .container3 h2 {
     font-size: 24px;
