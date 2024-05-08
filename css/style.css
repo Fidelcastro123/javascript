@@ -454,10 +454,10 @@ body{
   .card2:nth-child(3) {
     background-color: #ccccff; /* Light Blue */
   }
-  h1 {
+  .text1 h1 {
     font-size: 28px;
   }
-  h2 {
+  .text1 h2 {
     font-size: 24px;
     margin-bottom: 10px;
   }
