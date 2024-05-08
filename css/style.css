@@ -421,9 +421,6 @@ body{
     display: flex;
     align-items: center;
   }
-  .container2 h1{
-    padding: 30px;
-  }
   .image2 {
     flex: 1;
     margin-right: 50px; /* Add margin to create space */
@@ -474,8 +471,7 @@ body{
   .container3 h2 {
     font-size: 24px;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
   }
   .partners {
     display: flex;
