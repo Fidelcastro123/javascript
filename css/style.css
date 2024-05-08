@@ -421,6 +421,12 @@ body{
     display: flex;
     align-items: center;
   }
+  .container2 h1{
+    padding: 30px;
+  }
+  .container2 h2{
+    padding: 30px;
+  }
   .image2 {
     flex: 1;
     margin-right: 50px; /* Add margin to create space */
