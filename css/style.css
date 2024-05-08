@@ -421,8 +421,8 @@ body{
     display: flex;
     align-items: center;
   }
-  .container2 h1{
-    padding: 30px;
+  .container1{
+    padding: 20px;
   }
   .image2 {
     flex: 1;
