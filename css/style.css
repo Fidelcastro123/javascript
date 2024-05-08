@@ -470,11 +470,11 @@ body{
   .container3 {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
   }
   .container3 h2 {
     font-size: 24px;
     text-align: center;
-    padding: 20px;
   }
   .partners {
     display: flex;
