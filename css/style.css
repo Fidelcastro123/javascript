@@ -473,7 +473,6 @@ body{
     font-size: 24px;
     text-align: center;
     padding: 20px;
-    margin: 20px;
   }
   .partners {
     display: flex;
@@ -492,3 +491,21 @@ body{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   } 
+  .container1{
+    margin-bottom: 50px;
+  }
+  .container2 .text1{
+    margin-top: 30px;
+
+  }
+  .container2 .card2 p {
+    font-size: 16px; /* Smaller font size for paragraphs */
+    line-height: 1.6; /* Increase line height for readability */
+  }
+  .container2 .card2 {
+    background-color: #ffffff; /* White background for cards */
+    padding: 20px; /* Add padding for content */
+    margin-top: 20px; /* Add space between cards */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  }
