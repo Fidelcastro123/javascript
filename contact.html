@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HypeClean</title>
+    <link rel="icon" type="image/x-icon" href="image/logoclean.png">
+</head>
+<body>
+    <style>
+        
+        form{
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            padding: 2vw 4vw;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+        form h3{
+            color: #555;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        form input, form textarea{
+            border: 0;
+            margin: 10px 0;
+            padding: 20px;
+            outline: none;
+            background: #f5f5f5;
+            font-size: 16px;
+        }
+        form button{
+           padding: 15px;
+           background: #ff5361;
+           color: #fff;
+           font-size: 18px;
+           border: 0;
+           outline: none;
+           cursor: pointer;
+           width: 150px;
+           margin: 20px auto 0;
+           border-radius: 30px; 
+        }
+        .contact{
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: url("image/westland.png");
+            background-size: cover;
+        }
+        .contact .content{
+           max-width: 800px;
+           text-align: center; 
+        }
+        .contact .content h2{
+            font-size: 36px;
+            font-weight: 500;
+            color: #fff;
+        }
+        .contact .content p{
+            font-weight: 300;
+            color: #fff;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .container .contactInfo{
+            width: 50%;
+            display: flex;
+            flex-direction: column ;
+        }
+        .container .contactInfo .box{
+            position: relative;
+            padding: 20px 0;
+            display: flex;
+
+        }
+        .container .contactInfo .box .icon{
+            min-width:60px;
+            height: 60px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center ;
+            border-radius: 50%;
+            font-size: 22px;
+        }
+        .container .contactInfo .box .text{
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            color: #fff;
+            flex-direction: column;
+            font-weight: 300;
+        }
+        .container .contactInfo .box .text h3{
+            font-weight: 500;
+            color: #00bcd4;
+        }
+        @media (max-width:991px){
+            .contact{
+                padding: 50px;
+            }
+            .container{
+                flex-direction: column;
+            }
+            .container .contactInfo{
+                margin-bottom: 40px;
+                width: 100%;
+            }
+        }
+    </style>
+   <section class="contact">
+    <div class="content">
+       <h2>Contact Us</h2>
+       <p>
+        Being mobile-friendly involves simplifying your navigation, 
+        keeping forms short, including clickable CTA buttons and large 
+        form fields that make it easy for folks to fill it out on their 
+        mobile devices instead of having to pinch and zoom.
+       </p> 
+    </div>
+    <div class="container">
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Third parklands road <br>Nirobi,Westlands<br>160-200-0623</p>
+                    </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                </div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+254798200701</p>
+                    </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                </div>
+                    <div class="text">
+                         <h3>Email</h3>
+                        <p>hypecleaningservices@gmail.com</p>
+                    </div>
+            </div>
+        </div>
+        <div class="contactForm">
+            <form action="">
+                <h2>send Message</h2>
+                <div class="inputBox">
+                    <input type="text" id="name" placeholder="Your name" required>
+                    <input type="email" id="email" placeholder="Email id" required>
+                    <input type="text" id="phone" placeholder="Phone no." required>
+                    <textarea id="message" rows="4" placeholder="Request for a service" required></textarea>
+                    <button type="submit">Send</button>
+                    <button type="" id="request1">home</button>
+                </div>
+            </form>
+        </div>
+    </div>
+   </section> 
+   <script>
+    document.getElementById("request1").addEventListener("click", function() {
+        // Redirect to new.html
+        window.location.href = "index.html";
+    });
+   </script>
+</body>
+</html>

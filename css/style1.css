@@ -1,0 +1,268 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  *{
+    box-sizing: border-box;
+    width: auto;
+  }
+  .icons ul{ 
+  display: flex;
+    color: mediumblue;
+    list-style: none;
+    float: right;
+  }
+  .navbar-brand img{
+    height: 40px;
+    padding-left: 30px;
+  }
+  
+  .navbar{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:white;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+  }
+  .nav{
+    justify-content: right;
+   display: flex;
+    list-style: none;
+    margin-right: 15%;
+  }
+  .logo{
+    flex: 1 1 auto;
+    margin-left: 10%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 35px;
+    color: green;
+  }
+  a{
+    margin: 15px;
+    text-decoration: none;
+    color: blue;
+  }
+   a:hover{
+    cursor: pointer;
+    color: green;
+  }
+  .container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    animation: animate 20s ease-in-out infinite;
+    background-size: cover;
+  }
+  .outer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background:rgba(0,0,0,0);
+  }
+  .details{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .details h2{
+    font-size: 3em;
+    color:green;
+  }
+  @keyframes animate{
+    0%,100%{
+      background-image: url('../image/residential.jpg');
+    }
+    25%{
+      background-image: url('../image/logoclean.png');
+    }
+    50%{
+      background-image: url('../image/screen.png');
+    }
+    75%{
+      background-image: url('../image/retailshop.png');
+    }
+  }
+  .banner-area{
+    position: relative;
+    background-image: url(images/agric.jpg);
+    width: 100%;
+    height:100vh;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  
+  }
+  .about-area, .product-area, .service-area, .contact-area{
+    justify-content: space-around;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 700px;
+  }
+  .text-part{
+    width: 65%;
+    height: 80%;
+  }
+  h1{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  p{
+    font-size: 24px;
+    line-height: 50px;
+  }
+  .about-area, .service-area{
+    background: #fefefe;
+    color: #262626;
+  }
+  .about-area{
+    background:#fefefe;
+    color: #262626;
+  }
+  .product-area{
+    background-image: url('images/agric.jpg');
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url('images/agric.jpg');
+    color: #fff;
+  }
+  .contact-area{
+  background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url('images/cock.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  .footer{
+    color:black;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    opacity: 0.8;
+  }
+  .footer .footer-bottom{
+    color:gray;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding-top: 5px;
+  }
+  h2{
+    font-size: 1.5em;
+    color: #fefefe;
+  }
+  .footer .footer-content{
+    height: 400px;
+    display: flex;
+  } 
+  .footer .footer-content .footer-section{
+    padding: 25px;
+    flex: 1;
+  }
+  .footer .footer-content h1 
+  .footer .footer-content h2{
+    color: white;
+  }
+  .footer .footer-content .about h1 span{
+    color:blue;
+    font-size: 0.8em;
+  }
+  .footer-section ul{
+    list-style: none;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+  .logtext{
+    color:blueviolet ;
+    font-size: 3.1em;
+  }
+  .footer .footer-content .about .contact span{
+   display: flex;
+   font-size: 2em;
+   margin-bottom: 5px;
+  }
+  .text-input{
+    width: 200px;
+    height: 40px;
+  }
+  .contact{
+    font-size: 1em;
+  }
+  .Contacts{
+    color: black;
+    font-size: 2em;
+  }
+  .row{
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url('images/agric.jpg');
+    margin-top: 100px;
+    margin:5px;
+  }
+  img:hover{
+    color: grey;
+  }
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.map {
+    flex: 1;
+    padding: 20px;
+}
+.contact-area {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+.contact-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contact-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: black;
+}
+.contact-info p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+.map {
+  text-align: center;
+}
+iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

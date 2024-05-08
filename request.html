@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HypeClean</title>
+    <link rel="icon" type="image/x-icon" href="image/logoclean.png">
+</head>
+<body>
+    <style>
+        .container1{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: hwb(226 25% 18%);
+        }
+        form{
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            padding: 2vw 4vw;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+        form h3{
+            color: #555;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        form input, form textarea{
+            border: 0;
+            margin: 10px 0;
+            padding: 20px;
+            outline: none;
+            background: #f5f5f5;
+            font-size: 16px;
+        }
+        form button{
+           padding: 15px;
+           background: #ff5361;
+           color: #fff;
+           font-size: 18px;
+           border: 0;
+           outline: none;
+           cursor: pointer;
+           width: 150px;
+           margin: 20px auto 0;
+           border-radius: 30px; 
+        }
+    </style>
+    <div class="container1">
+        <form id="contactForm">
+            <h3>GET IN TOUCH</h3>
+            <input type="text" id="name" placeholder="Your name" required>
+            <input type="email" id="email" placeholder="Email id" required>
+            <input type="text" id="phone" placeholder="Phone no." required>
+            <textarea id="message" rows="4" placeholder="Request for a service" required></textarea>
+            <button type="submit">Send</button>
+            <button type="" id="request1">home</button>
+        </form>
+    </div>
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            // Get form values
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var message = document.getElementById("message").value;
+
+            // Send email using SMTPJS
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "fidelcastro7546@gmail.com", // Update with your Elastic Email username
+                Password : "6D3245FCAF6D465AAEF9826D01C5C079B834", // Update with your Elastic Email password
+                To : 'fidelcastro7546@gmail.com', // Update with your destination email
+                From : email,
+                Subject : "New Contact Form Enquiry",
+                Body : "Name: " + name + "\n" +
+                       "Email: " + email + "\n" +
+                       "Phone: " + phone + "\n" +
+                       "Message: " + message
+            }).then(
+                function(response) {
+                    alert("Email sent successfully");
+                    document.getElementById("contactForm").reset(); // Clear the form
+                },
+                function(error) {
+                    alert("Failed to send email. Please try again later.");
+                }
+            );
+        });
+        document.getElementById("request1").addEventListener("click", function() {
+        // Redirect to new.html
+        window.location.href = "index.html";
+    });
+    </script>
+</body>
+</html>

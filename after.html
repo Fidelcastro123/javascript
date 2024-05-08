@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <title>HypeClean</title>
+    <link rel="icon" type="image/x-icon" href="image/logoclean.png">
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+    
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #7d2ae8;
+        }
+        .wrapper{
+            margin: 150px auto;
+            width: 70%;
+        }
+        img{
+            max-width: 320px;
+            float: left;
+            border: 3px solid;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+        .text-box{
+            color: #fff;
+        }
+        .text-box h2{
+            font-size: 42px;
+        }
+        .text-box p{
+            font-size: 16px;
+        }
+    </style>
+    <div class="wrapper">
+        <img src="image/afterparty.png" alt="">
+        <div class="text-box">
+            <h2>After party services</h2>
+            <p>
+                Being mobile-friendly involves simplifying your navigation, keeping forms short, including clickable CTA buttons and large form fields that make it easy for folks to fill it out on their mobile devices instead of having to pinch and zoom.  
+            </p>
+            <button class="btn btn-primary" id="requestServiceBtn">Book this Service</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById("requestServiceBtn").addEventListener("click", function() {
+        // Redirect to new.html
+        window.location.href = "request.html";
+    });
+    </script>
+</body>
+</html>
